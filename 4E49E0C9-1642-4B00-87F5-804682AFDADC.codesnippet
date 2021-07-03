@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initAttributedString</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> ///提取数字和汉字
+    NSCharacterSet *nonDigits =[[NSCharacterSet decimalDigitCharacterSet] invertedSet];
+    NSString *numString =[doingString stringByTrimmingCharactersInSet:nonDigits] ;
+    NSString *string = [doingString substringWithRange:NSMakeRange(numString.length, doingString.length-numString.length)];
+    ///设置文本展示风格
+    NSMutableAttributedString *attrStr1 = [[NSMutableAttributedString alloc] initWithString:numString];
+    NSDictionary *attr_Dict1 = @{NSForegroundColorAttributeName:[UIColor color121212],
+                                  NSFontAttributeName:[UIFont pingFangSCMediumFont:24]};
+    [attrStr1 setAttributes:attr_Dict1 range:NSMakeRange(0, numString.length)];
+    
+    ///设置汉字
+    NSMutableAttributedString *attrStr2 = [[NSMutableAttributedString alloc] initWithString:string];
+    NSDictionary * attr_Dict2 = @{NSForegroundColorAttributeName:[UIColor color121212],
+                                 NSFontAttributeName:[UIFont pingFangSCMediumFont:14]};
+    [attrStr2 setAttributes:attr_Dict2 range:NSMakeRange(0, string.length)];
+    
+    [attrStr1 appendAttributedString:attrStr2];
+    _doingNub.attributedText = attrStr1;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4E49E0C9-1642-4B00-87F5-804682AFDADC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>提取数字和汉子的富文本</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

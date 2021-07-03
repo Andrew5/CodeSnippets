@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initcollectionviewdelegate</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>extension UCateListViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource{
+    func numberOfSections(in collectionView: UICollectionView) -&gt; Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -&gt; Int {
+        
+        return 10
+    }
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -&gt; UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(for: indexPath, cellType: UICollectionViewCell.self)
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -&gt; UIEdgeInsets {
+        return UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -&gt; CGSize {
+        let width = floor(Double(screenWidth - 40.0) / 3.0)
+        return CGSize(width: width, height: (indexPath.section == width * 0.75 + 30))
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            let model = topList[indexPath.row]
+            var titles: [String] = []
+            var vcs: [UIViewController] = []
+            for tab in model.extra?.tabList ?? [] {
+                guard let tabTitle = tab.tabTitle else { continue }
+                titles.append(tabTitle)
+                vcs.append(UComicListViewController(argCon: tab.argCon,
+                                                    argName: tab.argName,
+                                                    argValue: tab.argValue))
+            }
+            let vc = UPageViewController(titles: titles, vcs: vcs, pageStyle: .topTabBar)
+            vc.title = model.sortName
+            navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        if indexPath.section == 1 {
+            let model = rankList[indexPath.row]
+            let vc = UComicListViewController(argCon: model.argCon,
+                                              argName: model.argName,
+                                              argValue: model.argValue)
+            vc.title = model.sortName
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E4571446-694C-4850-9D51-BD35B40CDA55</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建collectionview代理方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

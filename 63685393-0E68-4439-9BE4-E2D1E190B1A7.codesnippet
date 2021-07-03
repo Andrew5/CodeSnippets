@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initCollectionView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UICollectionViewFlowLayout *flow = [[UICollectionViewFlowLayout alloc] init];
+    [flow setScrollDirection:UICollectionViewScrollDirectionVertical];//竖直滑动
+    //    flow.minimumLineSpacing = 0;
+    //    flow.minimumInteritemSpacing = 0;
+    flow.itemSize = CGSizeMake(75, 120);
+self.typeCollection = [[UICollectionView alloc] initWithFrame:&lt;#CGRectMake()#&gt; collectionViewLayout:flow];
+    self.typeCollection.backgroundColor = [UIColor clearColor];
+    self.typeCollection.delegate = self;
+    self.typeCollection.dataSource = self;
+    self.typeCollection.showsHorizontalScrollIndicator = NO;
+    self.typeCollection.showsVerticalScrollIndicator = NO;
+[self.typeCollection registerNib:[UINib nibWithNibName:&lt;#@"TypeCell"#&gt; bundle:nil] forCellWithReuseIdentifier:&lt;#@""#&gt;];//注册cell
+    [self.typeCollection registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];//注册分区头
+[self.view addSubview:self.typeCollection];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>63685393-0E68-4439-9BE4-E2D1E190B1A7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建collectionView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

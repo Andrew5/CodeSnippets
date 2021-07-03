@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>ZZZ</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>/**
+ *   注册部分头像上传
+ *  @param &lt;#avatar#&gt;  &lt;#头像图片#&gt;
+ *  @param &lt;#progressBlock#&gt;  &lt;#进度回调#&gt;
+ *  @param &lt;#resultBlock#&gt;  &lt;#上传回调#&gt;
+*/</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>66897C25-69B2-47F3-B0DE-DEA51761CA29</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>方法注释</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>方法注释</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

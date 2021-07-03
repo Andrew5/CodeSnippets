@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>insertRowsAtIndexPaths</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>[self.tableView beginUpdates];
+NSIndexPath *index = [NSIndexPath indexPathForRow:self.dataSource.count - 1 inSection:0];
+[self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:index]  withRowAnimation:UITableViewRowAnimationFade];
+[self.tableView endUpdates];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9557FD57-EF2B-4648-B419-3549F13EC35C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>插入列表indepathrow</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

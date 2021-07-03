@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initstringenum</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>typedef NS_ENUM (NSUInteger,PAYType) {
+    ///支付成功
+    PAYTypeSuccess = 0,
+    ///支付失败
+    PAYTypeFail = 1,
+    ///支付中
+    PAYTypePaying = 2,
+    ///支付取消
+    PAYTypeCancel = 3,
+    ///参数错误
+    PAYTypeErrorparams = 5,
+};
+static NSString *PAYTypeStringMap[] = {
+    [PAYTypeSuccess] = @"支付成功",
+    [PAYTypeFail] = @"支付失败",
+    [PAYTypePaying] = @"支付中",
+    [PAYTypeCancel] = @"支付取消",
+    [PAYTypeErrorparams] = @"参数错误"
+};</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>10057909-52C9-4C3E-BA5E-6F6F614D26E1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建外部访问字符串枚举</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建字符串枚举</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initispatchQueue</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeExpression</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+//主线程
+DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+    self.delayExecution()
+}
+///GCD 子线程
+DispatchQueue.global().asyncAfter(deadline: .now() + 3) {
+    self.delayExecution()
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8A4672FD-8E80-4D01-8613-1BC709E9C652</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>DispatchQueue</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>切换线程</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

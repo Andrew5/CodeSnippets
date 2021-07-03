@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initcollectionview</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>private lazy var collectionView: UICollectionView = {
+        let lt = UICollectionViewFlowLayout()
+        lt.minimumInteritemSpacing = 10
+        lt.minimumLineSpacing = 10
+        let cw = UICollectionView(frame: CGRect.zero, collectionViewLayout: lt)
+        cw.backgroundColor = UIColor.white
+        cw.delegate = self
+        cw.dataSource = self
+        cw.alwaysBounceVertical = true
+        cw.register(cellType: URankCCell.self)
+        cw.register(cellType: UTopCCell.self)
+        cw.uHead = URefreshHeader { [weak self] in self?.loadData() }
+        cw.uempty = UEmptyView { [weak self] in self?.loadData() }
+        return cw
+    }()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>80D537FE-8EE2-49AE-A422-2B2240B7F7F4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>创建collectionView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

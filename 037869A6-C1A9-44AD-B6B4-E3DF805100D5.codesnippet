@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initAttributedString</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> label = [[UILabel alloc] initWithFrame:CGRectZero];
+    label.text = @"测试";
+    const CGFloat fontSize = 16.0;
+    NSMutableAttributedString *attrString = [[NSMutableAttributedString alloc] initWithString:label.text];
+    NSUInteger length = [label.text length];
+    //设置字体
+    UIFont *baseFont = [UIFont systemFontOfSize:fontSize];
+    [attrString addAttribute:NSFontAttributeName value:baseFont range:NSMakeRange(0, length)];//设置所有的字体
+    //设置字体
+    UIFont *boldFont = [UIFont boldSystemFontOfSize:fontSize];
+    [attrString addAttribute:NSFontAttributeName value:boldFont range:[label.text rangeOfString:@"label"]];//设置Text这四个字母的字体为粗体
+    // 设置颜色
+    UIColor *color = [UIColor redColor];
+    [attrString addAttribute:NSForegroundColorAttributeName value:color range:[label.text rangeOfString:@"汉字"]];
+    [attrString addAttribute:NSBackgroundColorAttributeName value:[UIColor blueColor] range:[label.text rangeOfString:@"ent"]];
+    NSMutableParagraphStyle * style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+    style.lineSpacing = 10;//增加行高
+    style.headIndent = 10;//头部缩进，相当于左padding
+    style.tailIndent = -10;//相当于右padding
+    style.lineHeightMultiple = 1.5;//行间距是多少倍
+    style.alignment = NSTextAlignmentLeft;//对齐方式
+    style.firstLineHeadIndent = 20;//首行头缩进
+    style.paragraphSpacing = 10;//段落后面的间距
+    style.paragraphSpacingBefore = 20;//段落之前的间距
+    [attrString addAttribute:NSParagraphStyleAttributeName value:style range:NSMakeRange(0, length)];
+    [attrString addAttribute:NSKernAttributeName value:@2 range:NSMakeRange(0, length)];//字符间距 2pt
+    //设置文字描边颜色，需要和NSStrokeWidthAttributeName设置描边宽度，这样就能使文字空心
+    [attrString addAttribute:NSStrokeColorAttributeName value:[UIColor blueColor] range:[label.text rangeOfString:@"is"]];
+    [attrString addAttribute:NSStrokeWidthAttributeName value:@2 range:[label.text rangeOfString:@"is"]];//空心字，文字边框描述
+    [attrString addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleSingle) range:[label.text rangeOfString:@"text"]];//下划线
+    
+    [attrString addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleThick) range:[label.text rangeOfString:@"label"]];//厚的下划线
+    
+    NSShadow * sha = [[NSShadow alloc] init];
+    sha.shadowOffset = CGSizeMake(1, 0);
+    sha.shadowColor = [UIColor blueColor];
+    sha.shadowBlurRadius = 2; //阴影的大小
+    [attrString addAttribute:NSShadowAttributeName value:sha range:[label.text rangeOfString:@"可以"]];
+    [attrString addAttribute:NSBackgroundColorAttributeName value:[UIColor blueColor] range:[label.text rangeOfString:@"吗"]];
+    label.highlightedTextColor = [UIColor redColor];//设置文本高亮显示颜色，与highlighted一起使用。
+    label.highlighted = YES; //高亮状态是否打开
+    label.enabled = YES;//设置文字内容是否可变
+    label.userInteractionEnabled = YES;//设置标签是否忽略或移除用户交互。默认为NO
+    label.baselineAdjustment = UIBaselineAdjustmentNone;
+    label.attributedText = attrString;
+    [self.view addSubview:label];
+    </string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>037869A6-C1A9-44AD-B6B4-E3DF805100D5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>属性相对比较全的富文本</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>富文本</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

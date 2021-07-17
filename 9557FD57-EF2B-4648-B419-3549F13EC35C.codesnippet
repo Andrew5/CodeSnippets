@@ -26,6 +26,6 @@ NSIndexPath *index = [NSIndexPath indexPathForRow:self.dataSource.count - 1 inSe
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

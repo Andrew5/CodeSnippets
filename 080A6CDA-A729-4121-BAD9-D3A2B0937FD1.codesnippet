@@ -3,27 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>initstateinline</string>
+	<string>initalert</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>static inline NSString* testPathForKey(NSString* directory, NSString* key) {
-    //  stringByAppendingString 字符串拼接
-    //    stringByAppendingPathComponent 路径拼接
-    return [directory stringByAppendingString:key];
-}</string>
+	<string>UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"保存失败" preferredStyle:UIAlertControllerStyleAlert];
+                UIAlertAction *enter = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {}];
+                [alert addAction:enter];
+                [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>74391C0F-9AAC-4062-A1AC-1687ADBE7A01</string>
+	<string>080A6CDA-A729-4121-BAD9-D3A2B0937FD1</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetPlatformFamily</key>
 	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
-	<string></string>
+	<string>UIAlertController</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>创建stateinline方法</string>
+	<string>弹窗提示</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

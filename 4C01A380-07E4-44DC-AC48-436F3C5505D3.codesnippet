@@ -3,23 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>delay</string>
+	<string>na</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>All</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + &lt;#delayTime#&gt;) {
-        &lt;#code#&gt;
-    }</string>
+	<string>[[NSNotificationCenter defaultCenter] addObserver:&lt;#Observer#&gt; selector:&lt;#Selector#&gt; name:&lt;#Name#&gt; object:&lt;#Object#&gt;]; 
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>867AC17F-92FC-406F-A693-6E163FD35952</string>
+	<string>4C01A380-07E4-44DC-AC48-436F3C5505D3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>自定义延迟</string>
+	<string>Notification Add</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

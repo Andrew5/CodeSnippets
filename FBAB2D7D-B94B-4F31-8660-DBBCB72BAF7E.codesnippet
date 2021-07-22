@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initbuttonSwift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let &lt;#ButtonVar#&gt; = UIButton(frame: CGRect(x: &lt;#100#&gt;, y: &lt;#100#&gt;, width: &lt;#100#&gt;, height: &lt;#100#&gt;))
+&lt;#ButtonVar#&gt;.setTitle("&lt;#title#&gt;", for: UIControl.State.normal)
+&lt;#ButtonVar#&gt;.setTitleColor(UIColor.red, for: UIControl.State.normal)
+&lt;#ButtonVar#&gt;.titleLabel?.font = UIFont.systemFont(ofSize: 12)
+&lt;#ButtonVar#&gt;.backgroundColor = UIColor.yellow
+&lt;#ButtonVar#&gt;.addTarget(self, action: #selector(&lt;#buttonSelector#&gt;), for: UIControl.Event.touchUpInside)
+        
+self.view.addSubview(&lt;#ButtonVar#&gt;)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FBAB2D7D-B94B-4F31-8660-DBBCB72BAF7E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>swift创建button</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>createButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

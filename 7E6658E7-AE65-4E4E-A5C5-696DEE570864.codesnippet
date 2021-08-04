@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>initimgsize</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>///计算图片大小
+    NSData *data = UIImagePNGRepresentation(image);
+    if (!data) {
+        data = UIImageJPEGRepresentation(image, 0.7);//需要改成0.5才接近原图片大小，原因请看下文
+    }
+    double dataLength = [data length] * 1.0;
+    NSArray *typeArray = @[@"bytes",@"KB",@"MB",@"GB",@"TB",@"PB", @"EB",@"ZB",@"YB"];
+    NSInteger index = 0;
+    while (dataLength &gt; 1024) {
+        dataLength /= 1024.0;
+        index ++;
+    }
+    NSLog(@"image = %.3f %@",dataLength,typeArray[index]);
+    NSString *length = [NSString stringWithFormat:@"%.3f%@",dataLength,typeArray[index]];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7E6658E7-AE65-4E4E-A5C5-696DEE570864</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>计算image占空间大小</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>imageSize</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

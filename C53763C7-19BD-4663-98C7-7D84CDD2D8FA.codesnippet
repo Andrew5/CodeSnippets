@@ -6,7 +6,7 @@
 	<string>@copy</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceVariables</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>/** &lt;#copy属性注释#&gt; */

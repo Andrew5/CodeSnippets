@@ -17,6 +17,8 @@
 	<string>4655A1EE-0245-4792-AC9C-A0CED4936FAA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>获取当前时间戳</string>
 	<key>IDECodeSnippetTitle</key>

@@ -20,6 +20,8 @@
 	<string>52DB2734-257D-4BFB-BB27-EB8E6AB2E43A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>blockMethods.m方法实现</string>
 	<key>IDECodeSnippetTitle</key>

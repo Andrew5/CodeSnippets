@@ -20,6 +20,8 @@
 	<string>C8C56506-67E1-4976-8E6E-1AFB9B93222E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>时间戳</string>
 	<key>IDECodeSnippetTitle</key>

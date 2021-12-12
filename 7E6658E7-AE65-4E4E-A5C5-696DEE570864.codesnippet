@@ -27,6 +27,8 @@
 	<string>7E6658E7-AE65-4E4E-A5C5-696DEE570864</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>计算image占空间大小</string>
 	<key>IDECodeSnippetTitle</key>

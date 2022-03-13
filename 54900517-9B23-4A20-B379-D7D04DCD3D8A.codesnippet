@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazbutton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIButton *)&lt;# Var #&gt; {
+    if (!_&lt;# Var #&gt;) {
+        _&lt;# Var #&gt; = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_&lt;# Var #&gt; setImage:[UIImage imageNamed:@"edit"] forState:UIControlStateNormal];
+         [_&lt;# Var #&gt; setTitle:@"&lt;# Var #&gt;" forState:UIControlStateNormal];
+         [_&lt;# Var #&gt; setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [_&lt;# Var #&gt;.titleLabel setFont:[UIFont systemFontOfSize:14]];
+        [_&lt;# Var #&gt; addTarget:self action:@selector(&lt;# Method #&gt;) forControlEvents:(UIControlEventTouchUpInside)];
+    }
+    return _&lt;# Var #&gt;;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>54900517-9B23-4A20-B379-D7D04DCD3D8A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>懒加载button</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>createLazButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
